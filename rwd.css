@@ -1,0 +1,39 @@
+.product-description {
+  float: left;
+  width: 60%;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  article {
+    display: block;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-description-container {
+    display: none;
+  }
+
+  .product-description-summary {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  .product-title {
+    flex-wrap: wrap;
+    font-size: 22px;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+}
